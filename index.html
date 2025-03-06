@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
   <meta charset="utf-8">
   <meta name="description"
@@ -54,17 +54,17 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <div class="columns is-centered">
+      <div class="columns  is-centered is-gapless">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross Fusion</h1>
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               Anonymous ICCV submission
             </span>
           </div>
           <div style="font-size: 1.5em; margin-top: 10px; font-weight: bold; text-align: center;">
             Paper ID 2262
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -74,31 +74,31 @@
 <section class="hero is-small">
   <div class="hero-body">
     <br>
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered is-gapless">
       <h2 class="title is-3"><span style="color:#FFA500";>Motion</span>-guided Stylization</h2>
     </div>
   
-    <div class="columns is-centered has-text-centered">
-    </div>    
+    <!-- <div class="columns is-centered has-text-centered">
+    </div>     -->
     <br>
-    <div class="container">
+    <!-- <div class="container">
       <div class="columns is-centered" style="text-align: center;">
         <h2 class="subtitle is-5 small-font">Our method .......</h2>
       </div>
-     
+      -->
 
     <div class="has-text-centered" style="margin-bottom: 14px;">
       <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
-        <i>"A person walks <span style="color:#5e7dbd;">in a circle</span>."</i>
+        Input Content Text: <i>"A person walks <span style="color:#5e7dbd;">in a circle</span>."</i>
       </h2>
     </div>
     
-    <div class="columns is-centered">
+    <div class="columns is-centered ">
         <div class="column">
           <div class="content has-text-centered">
             <div class="videobox">
               <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-                <source src="./static/images/compare/motion-guided/Chicken_style.mp4"
+                <source src="./static/images/compare/Supp_Input/Chicken.mp4"
                         type="video/mp4">
               </video>
             </div>
@@ -110,7 +110,7 @@
           <div class="content has-text-centered">
             <div class="videobox">
               <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-                <source src="./static/images/compare/motion-guided/Chicken_smoodi.mp4"
+                <source src="./static/images/compare/Supp_smoodi_Circle/Chicken.mp4"
                         type="video/mp4">
               </video>
             </div>
@@ -121,54 +121,39 @@
           <div class="content has-text-centered">
             <div class="videobox">
               <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-                <source src="./static/images/compare/motion-guided/Chicken_ours.mp4"
+                <source src="./static/images/compare/Supp_Ours_Circle/Chicken.mp4"
                         type="video/mp4">
               </video>
             </div>
-            <h2 class="subtitle is-5">StyleMotif</h2>
+            <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
           </div>
         </div>
     </div>
 
-    <br>
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3"><span style="color:#FFA500";>Text</span>-guided Stylization</h2>
-    </div>
-
-    <div class="has-text-centered" style="margin-bottom: 14px;">
+    <!-- <div class="has-text-centered" style="margin-bottom: 14px;">
       <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
-        <i>"A person <span style="color:#5e7dbd;">bows</span>."</i>
+        Input Content Text: <i>"A person walks <span style="color:#5e7dbd;">in a circle</span>."</i>
       </h2>
-    </div>
+    </div> -->
 
     <div class="columns is-centered">
       <div class="column">
         <div class="content has-text-centered">
           <div class="videobox">
             <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/text-guided/Aeroplane_mesh.mp4"
+              <source src="./static/images/compare/Supp_Input/Flapping.mp4"
                       type="video/mp4">
             </video>
           </div>
           <h2 class="subtitle is-5">Input Style</h2>
+          <!-- <h2 class="subtitle is-5">[Chicken]</h2> -->
         </div>
       </div>       
-      <!-- <div class="column">
-        <div class="content has-text-centered">
-          <div class="videobox">
-            <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/text-guided/mld_bows_mesh.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <h2 class="subtitle is-5">MLD</h2>
-        </div>
-      </div> -->
       <div class="column">
         <div class="content has-text-centered">
           <div class="videobox">
             <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/text-guided/AeroplaneBow_mesh.mp4"
+              <source src="./static/images/compare/Supp_smoodi_Circle/Flapping.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -179,24 +164,13 @@
         <div class="content has-text-centered">
           <div class="videobox">
             <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/motion-guided/XXX.mp4"
+              <source src="./static/images/compare/Supp_Ours_Circle/Flapping.mp4"
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">StyleMotif</h2>
+          <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
         </div>
       </div>
-  </div>
-
-  <br>
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Style Interpolation</h2>
-    </div>
-
-  <div class="has-text-centered" style="margin-bottom: 14px;">
-    <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
-      <i>"A person <span style="color:#5e7dbd;">walks forward</span> and then <span style="color:#5e7dbd;">sit</span> down."</i>
-    </h2>
   </div>
 
   <div class="columns is-centered">
@@ -204,18 +178,19 @@
       <div class="content has-text-centered">
         <div class="videobox">
           <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-            <source src="./static/images/compare/inter/RaisedLeftArm_mesh.mp4"
+            <source src="./static/images/compare/Supp_Input/Rushed.mp4"
                     type="video/mp4">
           </video>
         </div>
         <h2 class="subtitle is-5">Input Style</h2>
+        <!-- <h2 class="subtitle is-5">[Chicken]</h2> -->
       </div>
     </div>       
     <div class="column">
       <div class="content has-text-centered">
         <div class="videobox">
           <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-            <source src="./static/images/compare/inter/RaisedLeftHandWalkSitDownBack2_mesh.mp4"
+            <source src="./static/images/compare/Supp_smoodi_Circle/Rushed.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -226,69 +201,286 @@
       <div class="content has-text-centered">
         <div class="videobox">
           <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-            <source src="./static/images/compare/motion-guided/XXX.mp4"
+            <source src="./static/images/compare/Supp_Ours_Circle/Rushed.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <h2 class="subtitle is-5">StyleMotif</h2>
+        <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
       </div>
     </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"><span style="color:#FFA500";>Text</span>-guided Stylization</h2>
+    </div>
+    <br>
+    <div class="has-text-centered" style="margin-bottom: 14px;">
+      <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
+        Input Context Text: <i>"A person <span style="color:#5e7dbd;">walks forward then sits down</span>."</i>
+      </h2>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Input/Aeroplane.mp4"
+                      type="video/mp4">
+            </video> -->
+          </div>
+          <h2 class="subtitle is-5">Input Style Text: <i>"Aeroplane"</i></h2>
+        </div>
+      </div>       
+      
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Input/Chicken.mp4"
+                      type="video/mp4">
+            </video> -->
+          </div>
+          <h2 class="subtitle is-5">Input Style Text: <i>"Chicken"</i></h2>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Input/Dinosaur.mp4"
+                      type="video/mp4">
+            </video> -->
+          </div>
+          <h2 class="subtitle is-5">Input Style Text: <i>"Dinosaur"</i></h2>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Text_Sit/Aeroplane.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Text_Sit/Chicken.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="videobox">
+            <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+              <source src="./static/images/compare/Supp_Text_Sit/Dinosaur.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+        </div>
+      </div>
+  </div>
+
+  <br>
+<br>
+<br>
+<div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Style Interpolation</h2>
+    </div>
+    <br>
+  <div class="has-text-centered" style="margin-bottom: 14px;">
+    <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
+      Input Content Text: <i>"A person is<span style="color:#5e7dbd;"> walking</span>."</i>
+    </h2>
+  </div>
+  <br>
+  <div class="columns is-centered">
+    <div class="column">
+      <div class="content has-text-centered">
+        <h2 class="subtitle is-5">Input Styles: <i>"Elated"</i> + <i>"Balance"</i></h2>
+        <div class="videobox">
+          <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+            <source src="./static/images/compare/Supp_Inter/Elated.mp4"
+                    type="video/mp4">
+          </video>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content has-text-centered">
+        <h2 class="subtitle is-5">Input Styles: <i>"Rushed"</i> + <i>"OnPhoneLeft"</i></h2>
+        <div class="videobox">
+          <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+            <source src="./static/images/compare/Supp_Inter/Rushed.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content has-text-centered">
+        <h2 class="subtitle is-5">Input Styles: <i>"Drunk"</i> + <i>"Balance"</i></h2>
+        <div class="videobox">
+          <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+            <source src="./static/images/compare/Supp_Inter/Drunk.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      </div>
+    </div>       
 
     
 </div>
 
 <br>
+<br>
+<br>
 <div class="columns is-centered has-text-centered">
   <h2 class="title is-3"><span style="color:#FFA500";>Multi-modal</span> Motion Stylization</h2>
 </div>
-
+<br>
 <div class="has-text-centered" style="margin-bottom: 14px;">
   <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
-    <i>"A person <span style="color:#5e7dbd;">crawls</span> on the floor."</i>
+    Input Content Text: <i>"A person is <span style="color:#5e7dbd;">walking</span>."</i>
   </h2>
 </div>
 
-<div class="columns is-centered">
+<!-- <div class="columns is-centered">
   <div class="column">
     <div class="content has-text-centered">
       <div class="videobox">
         <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-          <source src="./static/images/compare/multimodal/Aeroplane_mesh.mp4"
+          <source src="./static/images/compare/Supp_multimodal/Chicken_audio.m4a"
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">Input Style</h2>
+      <h2 class="subtitle is-5">Input Style (Audio)</h2>
     </div>
   </div>     
   <div class="column">
     <div class="content has-text-centered">
       <div class="videobox">
         <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-          <source src="./static/images/compare/multimodal/AeroplanCrawls_mesh.mp4"
+          <source src="./static/images/compare/Supp_multimodal/Duck_image.jpeg"
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">SMooDi</h2>
+      <h2 class="subtitle is-5">Input Style (Image)</h2>
+    </div>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column">
+      <div class="content has-text-centered">
+        <div class="audiobox">
+          <img src="./static/images/compare/Supp_multimodal/audio.png" alt="Audio Icon" class="audio-icon">
+          <audio controls>
+            <source src="./static/images/compare/Supp_multimodal/Chicken_audio.m4a" type="audio/mpeg">
+          </audio>
+        </div>
+        <h2 class="subtitle is-5">Input Style<br>[ <span style="color:#FFA500";>Audio</span> of Cock Crow ]</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content has-text-centered">
+        <div class="imagebox">
+          <img src="./static/images/compare/Supp_multimodal/Duck_image.jpeg" alt="Duck Image" class="image">
+        </div>
+        <h2 class="subtitle is-5">Input Style<br>[ <span style="color:#FFA500";>Image</span> of Duck ]</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content has-text-centered">
+        <div class="videobox">
+          <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+            <source src="./static/images/compare/Supp_multimodal/Dinosaur_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle is-5">Input Style<br>[ <span style="color:#FFA500";>Video</span> of Dinosaur ]</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content has-text-centered">
+        <div class="videobox">
+          <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+            <source src="./static/images/compare/Supp_multimodal/chicken2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle is-5">Input Style<br>[ <span style="color:#FFA500";>Video</span> of Cock ]</h2>
+      </div>
+    </div>
+  </div>
+<div class="columns is-centered">
+  <div class="column">
+    <div class="content has-text-centered">
+      <div class="videobox">
+        <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+          <source src="./static/images/compare/Supp_multimodal/Chicken.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+    </div>
+  </div>     
+  <div class="column">
+    <div class="content has-text-centered">
+      <div class="videobox">
+        <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+          <source src="./static/images/compare/Supp_multimodal/DuckFoot.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
     </div>
   </div>
   <div class="column">
     <div class="content has-text-centered">
       <div class="videobox">
         <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-          <source src="./static/images/compare/motion-guided/XXX.mp4"
+          <source src="./static/images/compare/Supp_multimodal/Dinosaur.mp4"
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">StyleMotif</h2>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
     </div>
   </div>
-  
+  <div class="column">
+    <div class="content has-text-centered">
+      <div class="videobox">
+        <video poster="" id="pelvis" autoplay controls muted loop height="100%">
+          <source src="./static/images/compare/Supp_multimodal/Chicken.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+    </div>
+  </div>    
 </div>
 
   </div>
 </div>
+
+
 </section>
-
-
 </body>
 </html>
+
