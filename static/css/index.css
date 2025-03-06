@@ -156,3 +156,55 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+audio {
+  width: 350px;  /* 宽度充满容器 //100%;*/
+  max-width: 350px; /* 最大宽度 */
+}
+
+video {
+  width: auto;
+  height: 200px; /* 高度自适应 */
+}
+
+.image {
+  max-width: 100%; /* 图片最大宽度为容器宽度 */
+  max-height: 100%; /* 图片最大高度为容器高度 */
+  height: auto; /* 高度自适应 */
+  width: auto; /* 宽度自适应 */
+  align-items: center; /* 垂直居中 */
+}
+
+.imagebox {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* max-width: 350px; */
+  width: auto;
+  height: 200px; /* 高度自适应 */
+}
+
+/* .columns .column {
+  flex: 1;
+  margin-left: 1px; 
+  margin-right: 1px; 
+} */
+
+
+.audiobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.audio-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px; 
+  margin-top: 50px; 
+}
+
+.columns .column {
+  margin-left: 1px; 
+  margin-right: 1px; 
+}
