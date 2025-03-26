@@ -6,7 +6,7 @@
         content="StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross Fusion">
   <meta name="keywords" content="StyleMotif">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StyleMotif</title>
+  <title><span style="font-variant: small-caps;"><b>StyleMotif</b></span></title>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -56,7 +56,7 @@
     <div class="container is-max-desktop">
       <div class="columns  is-centered is-gapless">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross Fusion</h1>
+          <h1 class="title is-2 publication-title"><span style="font-variant: small-caps;"><b>StyleMotif</b></span>: Multi-Modal Motion Stylization<br>using Style-Content Cross Fusion</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               Anonymous ICCV submission
@@ -72,12 +72,56 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present <span style="font-variant: small-caps;"><b>StyleMotif</b></span>, a novel Stylized Motion Latent Diffusion model, generating motion conditioned on both content and style from multiple modalities. Unlike existing approaches that either focus on generating diverse motion content or transferring style from sequences, <span style="font-variant: small-caps;"><b>StyleMotif</b></span> seamlessly synthesizes motion across a wide range of content while incorporating stylistic cues from <i><b>multi-modal</b></i> inputs, including motion, text, image, video, and audio. To achieve this, we introduce a style-content cross fusion mechanism and align a style encoder with a pre-trained multi-modal model, ensuring that the generated motion accurately captures the reference style while preserving realism. Extensive experiments demonstrate that our framework surpasses existing methods in stylized motion generation and exhibits emergent capabilities for multi-modal motion stylization, enabling more nuanced motion synthesis. Source code and pre-trained models will be released upon acceptance. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <div class="column">
+            <img src="./static/images/method.jpg" />
+          </div>
+          <p>
+            
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="hero is-small">
   
   <div class="hero-body">
     <br>
 <div class="columns is-centered has-text-centered">
   <h2 class="title is-3"><span style="color:#FFA500";>Multi-modal</span> Motion Stylization</h2>
+</div>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified">
+      <p>
+        With the power of the aligned multi-modal space, our model supports stylization guided by a variety of modalities, including motion, text, image, video, and audio. Our model generates a stylized motion that incorporates the style from the input modality while maintaining the content integrity as specified by the text prompt.
+      </p>
+    </div>
+  </div>
 </div>
 <br>
 <div class="has-text-centered" style="margin-bottom: 14px;">
@@ -138,7 +182,7 @@
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
     </div>
   </div>     
   <div class="column">
@@ -149,7 +193,7 @@
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
     </div>
   </div>
   <div class="column">
@@ -160,7 +204,7 @@
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
     </div>
   </div>
   <div class="column">
@@ -171,7 +215,7 @@
                   type="video/mp4">
         </video>
       </div>
-      <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+      <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
     </div>
   </div>    
 </div>
@@ -183,7 +227,18 @@
     <div class="columns is-centered has-text-centered is-gapless">
       <h2 class="title is-3"><span style="color:#FFA500";>Motion</span>-guided Stylization</h2>
     </div>
-  
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We show some qualitative results of motion-guided stylization from our model and baseline, SMooDi. Our model produces more cohesive stylized motions, with better alignment of style and content. 
+            <!-- For instance, in the provided examples, SMooDi fails to maintain the `circular' trajectory or `hop' action specified by the content or cannot accurately reflect the intended style, `phone on the left'. This indicates that our approach more effectively integrates style and content, resulting in more realistic and consistent stylized motions.  -->
+          </p>
+        </div>
+      </div>
+    </div>
+    
     <!-- <div class="columns is-centered has-text-centered">
     </div>     -->
     <br>
@@ -220,7 +275,8 @@
                         type="video/mp4">
               </video>
             </div>
-            <h2 class="subtitle is-5">SMooDi</h2>
+            <h2 class="subtitle is-5">SMooDi ❌ (not <span style="color:#e92841;">circular</span> trajectory)</h2>
+            <!-- <h2 class="subtitle is-6">Fails to maintain the <span style="color:#e92841;">circular</span> trajectory</h2> -->
           </div>
         </div>
         <div class="column">
@@ -231,7 +287,7 @@
                         type="video/mp4">
               </video>
             </div>
-            <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
+            <h2 class="subtitle is-5"><span style="font-variant: small-caps;"><b>StyleMotif</b></span> (Ours) 🟢</h2>
           </div>
         </div>
     </div>
@@ -263,7 +319,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">SMooDi</h2>
+          <h2 class="subtitle is-5">SMooDi ❌ (not <span style="color:#e92841;">flapping</span>)</h2>
         </div>
       </div>
       <div class="column">
@@ -274,7 +330,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
+          <h2 class="subtitle is-5"><span style="font-variant: small-caps;"><b>StyleMotif</b></span> (Ours) 🟢</h2>
         </div>
       </div>
   </div>
@@ -300,7 +356,9 @@
                     type="video/mp4">
           </video>
         </div>
-        <h2 class="subtitle is-5">SMooDi</h2>
+        <!-- <h2 class="subtitle is-5">SMooDi</h2> -->
+        <h2 class="subtitle is-5">SMooDi ❌ (not <span style="color:#e92841;">circular</span> trajectory & <span style="color:#e92841;">foot skating</span>)</h2>
+        <!-- <h2 class="subtitle is-6">Fails to maintain the <span style="color:#e92841;">circular</span> trajectory</h2> -->
       </div>
     </div>
     <div class="column">
@@ -311,7 +369,7 @@
                     type="video/mp4">
           </video>
         </div>
-        <h2 class="subtitle is-5">StyleMotif (Ours)</h2>
+        <h2 class="subtitle is-5"><span style="font-variant: small-caps;"><b>StyleMotif</b></span> (Ours) 🟢</h2>
       </div>
     </div>
 </div>
@@ -322,6 +380,16 @@
     <div class="columns is-centered has-text-centered">
       <h2 class="title is-3"><span style="color:#FFA500";>Text</span>-guided Stylization</h2>
     </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We showcase qualitative results for text-guided stylization, where our model also demonstrates strong capability in harmonizing style and content, generating high-quality and visually coherent results.
+          </p>
+        </div>
+      </div>
+    </div>
+    
     <br>
     <div class="has-text-centered" style="margin-bottom: 14px;">
       <h2 class="subtitle is-5 handwriting" style="font-weight: bold; font-size: 1.5em;">
@@ -333,10 +401,6 @@
       <div class="column">
         <div class="content has-text-centered">
           <div class="videobox">
-            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/Supp_Input/Aeroplane.mp4"
-                      type="video/mp4">
-            </video> -->
           </div>
           <h2 class="subtitle is-5">Input Style Text: <i>"Aeroplane"</i></h2>
         </div>
@@ -345,10 +409,6 @@
       <div class="column">
         <div class="content has-text-centered">
           <div class="videobox">
-            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/Supp_Input/Chicken.mp4"
-                      type="video/mp4">
-            </video> -->
           </div>
           <h2 class="subtitle is-5">Input Style Text: <i>"Chicken"</i></h2>
         </div>
@@ -356,10 +416,6 @@
       <div class="column">
         <div class="content has-text-centered">
           <div class="videobox">
-            <!-- <video poster="" id="pelvis" autoplay controls muted loop height="100%">
-              <source src="./static/images/compare/Supp_Input/Dinosaur.mp4"
-                      type="video/mp4">
-            </video> -->
           </div>
           <h2 class="subtitle is-5">Input Style Text: <i>"Dinosaur"</i></h2>
         </div>
@@ -374,7 +430,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
         </div>
       </div>
       <div class="column">
@@ -385,7 +441,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
         </div>
       </div>
       
@@ -397,7 +453,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
         </div>
       </div>
   </div>
@@ -407,6 +463,15 @@
   <br>
   <div class="columns is-centered has-text-centered">
     <h2 class="title is-3">Style Interpolation</h2>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+          Leveraging the aligned multi-modal space, our model enables text-guided style interpolation. Given one content text along with at least two style style texts, our model generates a motion that combines the characteristics of all input styles. 
+        </p>
+      </div>
+    </div>
   </div>
   <br>
     <div class="has-text-centered" style="margin-bottom: 14px;">
@@ -424,7 +489,7 @@
               <source src="./static/images/compare/Supp_Inter/Elated.mp4"
                       type="video/mp4">
             </video>
-            <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+            <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
           </div>
         </div>
       </div>
@@ -437,7 +502,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
         </div>
       </div>
       <div class="column">
@@ -449,7 +514,7 @@
                       type="video/mp4">
             </video>
           </div>
-          <h2 class="subtitle is-5">Output Stylized Motion<br>from StyleMotif</h2>
+          <h2 class="subtitle is-5">Output Stylized Motion<br>from <span style="font-variant: small-caps;"><b>StyleMotif</b></span></h2>
         </div>
       </div>       
   </div>
